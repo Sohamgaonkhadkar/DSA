@@ -9,14 +9,14 @@ public:
             mid++;
             }
         
-        else if(arr[mid] == 1) {
-            mid++;
+            else if(arr[mid] == 1) {
+                mid++;
+            }
+            else {
+                swap(arr[mid], arr[high]);
+                high--;
+            }
         }
-        else {
-            swap(arr[mid], arr[high]);
-            high--;
-        }
-    }
 
     }
 };
